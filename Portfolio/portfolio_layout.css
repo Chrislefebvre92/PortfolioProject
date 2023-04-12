@@ -11,7 +11,7 @@
 }
 
 /* Tablet */
-@media only screen and (min-width: 481px) and (max-width: 768px) {
+@media only screen and (min-width: 481px) and (max-width: 680px) {
     .NavigationBar #myLinks {
         display: none;
     }
@@ -21,7 +21,7 @@
 }
 
 /* Desktop */
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 820px) {
     .NavigationBar #myLinks {
         display: block;
     }
