@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+    Author: Chris Lefebvre
+    Project: Final project
+-->
+
+<head>
+    <title>Lefebvre - Goals</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio_layout.css">
+    <link rel="stylesheet" href="portfolio_base.css">
+    <link rel="stylesheet" href="resume_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="Navigation_Bar">
+            <a href="Home.html" class="active">Home</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleNavigation()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <div id="Links">
+                <a href="Goals.html">Goals</a>
+                <a href="Skills.html">Skills</a>
+                <a href="Resume.html">Resume</a>
+                <a href="Accomplishments.html">Accomplishments</a>
+                <a href="Contacts.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="Future_Image">
+            <img src="Old_school_computer.jpg" width="250" alt="Future_old_school">
+        </div>
+        <div id="PageTitle">
+            <h1>My Resume</h1>
+        </div>
+        <section id="#Resume">
+            <div id="container">
+                <h2>Chris Lefebvre</h2>
+                <h3>Bedford, Nova Scotia</h3>
+                <p>(902) 266 6058 </p>
+                <p>chris_lefebvre@live.com</p>
+
+
+                <div id="summary"></div>
+                <h3>PROFESSIONAL SUMMARY</h3>
+                <p>student looking to join the workforce to gain real-world experience in the IT sector.
+                    Ability to complete tasks on time in both individual and team settings.
+                    Highly motivated, dependable, and reliable, ready to learn.
+                </p>
+
+
+                <div id="skills"></div>
+                <h3>SKILLS</h3>
+                <ul>
+                    <li>M.A.C. (Moves, Additions, Changes) to computers and computer hardware.</li>
+                    <li>Experienced at Windows & Linux OS Administration</li>
+                    <li>Proficient at programming in SQL/MySQL</li>
+                    <li>Basic Knowledge of Python programming language</li>
+                    <li>Basic knowledge of Java programming language</li>
+                </ul>
+
+
+
+                <div id="Work_History"></div>
+                <h3>Work History</h3>
+                <h4>Marine Engineer</h4>
+                <h4>Canadian Armed Forces</h4>
+                <h4>10/2015 - 06/2022</h4>
+                <ul>
+                    <li>Collaborated with engineering staff to execute preventive maintenance on
+                        machinery.</li>
+                    <li>Work with civilian leads to inspect marine equipment and machinery to draw up
+                        work
+                        requests.</li>
+                    <li>Conducted periodic rounds and inspections of machinery spaces.</li>
+                    <li>Provided inspections to the rigid hull inflatable boats before any operation by
+                        ship’s
+                        crew.</li>
+                    <li>Collaborated with civilian contractors on installing new machinery.</li>
+                </ul>
+
+
+
+                <h3>Home theatre Installer</h3>
+                <h3>Geek Squad</h3>
+                <h3>07/2011 - 10/2015</h3>
+                <ul>
+                    <li>Proved successful working within tight deadlines and a fast-paced environment.</li>
+                    <li>Self-motivated, with a strong sense of personal responsibility.</li>
+                    <li>Delivered services to customer locations within specific timeframes.</li>
+                </ul>
+
+                <div id="Education"></div>
+                <h3>Education</h3>
+                <ul>
+                    <li>Database Administrator, Expected graduation in 04/2024</li>
+                </ul>
+            </div>
+        </section>
+        <script>
+            function toggleNavigation() {
+                var x = document.getElementById("Links");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+        </script>
+        <footer>
+            <p>&copy; Lefebvre's Portfolio</p>
+        </footer>
+    </main>
+</body>
