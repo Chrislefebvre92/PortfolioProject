@@ -4,7 +4,7 @@ body {
 }
 
 header {
-    background-color: #0011ff;
+    background-color: #ff0095;
     color: #fff;
     padding: 20px;
 }
@@ -84,13 +84,3 @@ form input[type="submit"]:hover {
     background-color: #05e8f8;
 }
 
-textarea {
-    width: 100%;
-    height: 200px;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 2px solid #7c7c7c27;
-    border-radius: 4px;
-    background-color: #7c7c7c27;
-    resize: none;
-}
