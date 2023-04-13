@@ -4,37 +4,53 @@
     Author: Chris Lefebvre
     Project: Final project
 -->
-<html>
 <head>
 	<title>My Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
 	<link rel="stylesheet" href="portfolio_layout.css">
-    <link rel="stylesheet" href="portfolio_base">
+	<link rel="stylesheet" href="portfolio_base.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
+
 <body>
 	<header>
-		<nav>
-			<ul>
-				<li><a href="Home.html">Home</a></li>
-				<li><a href="Goals.html">Goals</a></li>
-				<li><a href="Skills.html">Skills</a></li>
-				<li><a href="Resume.html">Resume</a></li>
-				<li><a href="Accomplishments.html">Accomplishments</a></li>
-				<li><a href="Contacts.html">Contact</a></li>
-			</ul>
+		<nav class="Navigation_Bar">
+			<a href="Home.html" class="active">Home</a>
+			<a href="javascript:void(0);" class="icon" onclick="toggleNavigation()">
+				<i class="fa fa-bars"></i>
+			</a>
+			<div id="Links">
+				<a href="Goals.html">Goals</a>
+				<a href="Skills.html">Skills</a>
+				<a href="Resume.html">Resume</a>
+				<a href="Accomplishments.html">Accomplishments</a>
+				<a href="Contacts.html">Contact</a>
+			</div>
 		</nav>
 	</header>
 	<div id="Future_Image">
-		<img src="Old school computer.jpg" width="250" alt="Future old school">
+		<img src="Old school computer.jpg" width="250" alt="Future_old_school">
 	</div>
 	<main>
+
 		<section id="home">
 			<h1>Welcome to my Portfolio!</h1>
 			<p>Hello! My name is Chris Lefebvre and I'm currently a student at NSCC studying Database Administration.
-			   Before I started at NSCC I worked in the Canadian Armed forces as a Marine Engineer for just shy of 7 years. 
-			   I'm a big fan of music from Hip-Hop to Rock & Roll. During my free time I typically play some sort of game.
-			   I've always had some sort of console or Computer in my life. It all started with a Nintendo in 1997. 
+				Before I started at NSCC I worked in the Canadian Armed forces as a Marine Engineer for just shy of 7.
+				years. I'm a big fan of music from Hip-Hop to Rock & Roll. During my free time I typically play some sort of
+				game. I've always had some sort of console or Computer in my life. It all started with a Nintendo in 1997.
 			</p>
+		</section>
 	</main>
+	<script>
+		function toggleNavigation() {
+			var x = document.getElementById("Links");
+			if (x.style.display === "block") {
+				x.style.display = "none";
+			} else {
+				x.style.display = "block";
+			}
+		}
+	</script>
 </body>
-</html>

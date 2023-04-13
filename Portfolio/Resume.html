@@ -4,40 +4,57 @@
     Author: Chris Lefebvre
     Project: Final project
 -->
+
 <head>
+    <title>Lefebvre - Goals</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="portfolio_layout.css">
-    <link rel="stylesheet" href="portfolio_base">
+    <link rel="stylesheet" href="portfolio_base.css">
+    <link rel="stylesheet" href="resume_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>My Resume</title>
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="Goals.html">Goals</a></li>
-                <li><a href="Skills.html">Skills</a></li>
-                <li><a href="Resume.html">Resume</a></li>
-                <li><a href="Accomplishments.html">Accomplishments</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-            </ul>
+        <nav class="Navigation_Bar">
+            <a href="Home.html" class="active">Home</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleNavigation()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <div id="Links">
+                <a href="Goals.html">Goals</a>
+                <a href="Skills.html">Skills</a>
+                <a href="Resume.html">Resume</a>
+                <a href="Accomplishments.html">Accomplishments</a>
+                <a href="Contacts.html">Contact</a>
+            </div>
         </nav>
     </header>
-
+    <style>
+        textarea {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+    </style>
     <main>
         <div id="Future_Image">
-            <img src="Old school computer.jpg" width="250" alt="Future old school">
+            <img src="Old school computer.jpg" width="250" alt="Future_old_school">
         </div>
         <section>
-            <h1>Resume</h1>
             <div id="PageTitle">
+            <h1>Resume</h1>
             </div>
-            <section id="Resume">
+            </div>
+            <section id="#Resume">
                 <div id="container">
                     <div id="header">
-
+                    
                         <h2>Chris Lefebvre</h2>
                         <h3>Bedford, Nova Scotia</h3>
                         <p>(902) 266 6058 </p>
@@ -95,3 +112,16 @@
                         <ul>
                             <li>Database Administrator, Expected graduation in 04/2024</li>
                         </ul>
+            </section>
+            <script>
+                function toggleNavigation() {
+                    var x = document.getElementById("Links");
+                    if (x.style.display === "block") {
+                        x.style.display = "none";
+                    } else {
+                        x.style.display = "block";
+                    }
+                }
+            </script>
+
+</body>

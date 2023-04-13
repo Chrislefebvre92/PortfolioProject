@@ -1,3 +1,4 @@
+@charset "utf-8";
 /* Mobile */
 @media (max-width: 600px) {
     nav ul {
@@ -8,24 +9,4 @@
         margin-bottom: 10px;
         margin-right: 0;
     }
-}
-
-/* Tablet */
-@media only screen and (min-width: 481px) and (max-width: 680px) {
-    .NavigationBar #myLinks {
-        display: none;
-    }
-    .icon {
-        display: block;
-      }
-}
-
-/* Desktop */
-@media only screen and (min-width: 820px) {
-    .NavigationBar #myLinks {
-        display: block;
-    }
-    .icon {
-        display: none;
-      }
 }
