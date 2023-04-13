@@ -5,33 +5,41 @@
     Project: Final project
 -->	
 <head>
+	<title>Lefebvre - Goals</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="portfolio_layout.css">
-	<link rel="stylesheet" href="portfolio_base">
+	<link rel="stylesheet" href="portfolio_base.css">
+	<link rel="stylesheet" href="resume_style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 	<title>My Goals</title>
 </head>
 <body>
 	<header>
-		<nav>
-			<ul>
-				<li><a href="Home.html">Home</a></li>
-				<li><a href="Goals.html">Goals</a></li>
-				<li><a href="Skills.html">Skills</a></li>
-				<li><a href="Resume.html">Resume</a></li>
-				<li><a href="Accomplishments.html">Accomplishments</a></li>
-				<li><a href="Contact.html">Contact</a></li>
-			</ul>
+		<nav class="Navigation_Bar">
+			<a href="Home.html" class="active">Home</a>
+			<a href="javascript:void(0);" class="icon" onclick="toggleNavigation()">
+				<i class="fa fa-bars"></i>
+			</a>
+			<div id="Links">
+				<a href="Goals.html">Goals</a>
+				<a href="Skills.html">Skills</a>
+				<a href="Resume.html">Resume</a>
+				<a href="Accomplishments.html">Accomplishments</a>
+				<a href="Contacts.html">Contact</a>
+			</div>
 		</nav>
 	</header>
-	
+
 	<main>
 		<div id="Future_Image">
-            <img src="Old school computer.jpg" width="250" alt="Future old school">
+            <img src="Old school computer.jpg" width="250" alt="Future_old_school">
         </div>
 		<section>
+			<div id="PageTitle">
 			<h1>Here are my short-term and long-term goals!</h1>
 			<h3>My Goals</h3>
+			</div>
 			<ul>
 				<li>My first short term goal is to obtain a job in IT and gain expereince during the summer break</li>
 				<li>My second short term goal is to continue polishing my skills over the summer with SQL and linux</li>
@@ -45,5 +53,15 @@
 	<footer>
 		<p>&copy; Lefebvre's Portfolio</p>
 	</footer>
+	<script>
+		function toggleNavigation() {
+			var x = document.getElementById("Links");
+			if (x.style.display === "block") {
+				x.style.display = "none";
+			} else {
+				x.style.display = "block";
+			}
+		}
+	</script>
 </body>
-</html>
+
