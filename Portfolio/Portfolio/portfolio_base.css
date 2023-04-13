@@ -72,15 +72,15 @@ form input[type="submit"] {
 }
 
 form input[type="submit"]:hover {
-    background-color: #05e8f8;
+    background-color: #26effd;
 }
 
 #Skills, #HomePage, #Goals, #Resume, #Accomplishments, #Contact, #Form {
-    max-width: 850px;
+    max-width: 750px;
     margin: auto;
     padding: 10px;
-    background-color: #8b8b8b;
-    border: 1px solid #020202;
+    background-color: #cacaca41;
+    border: 1px solid #000000;
 }
 #Skills h2 {
     font-size: 20px;
@@ -115,7 +115,7 @@ form input[type="submit"]:hover {
 }
 .Navigation_Bar {
     overflow: hidden;
-    background-color: rgb(255, 4, 242);
+    background-color: rgb(247, 147, 55);
     position: relative;
 }
 
