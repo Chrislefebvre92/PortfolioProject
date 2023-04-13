@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+    Author: Chris Lefebvre
+    Project: Final project
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio_layout.css">
+    <link rel="stylesheet" href="portfolio_base.css">
+    <link rel="stylesheet" href="resume_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Contact Me</title>
+</head>
+
+<body>
+    <header>
+        <nav class="Navigation_Bar">
+            <a href="Home.html" class="active">Home</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleNavigation()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <div id="Links">
+                <a href="Goals.html">Goals</a>
+                <a href="Skills.html">Skills</a>
+                <a href="Resume.html">Resume</a>
+                <a href="Accomplishments.html">Accomplishments</a>
+                <a href="Contacts.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="Future_Image">
+            <img src="Old_school_computer.jpg" width="250" alt="Future_old_school">
+        </div>
+        <section id="Resume">
+            <h1>Contact Me</h1>
+            <p>Chris Lefebvre</p>
+            <p>Bedford, Nova Scotia</p>
+            <p>(902) 266 6058 </p>
+            <p>chris_lefebvre@live.com</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message"></textarea><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Lefebvre's Portfolio</p>
+    </footer>
+    <script>
+        function toggleNavigation() {
+            var x = document.getElementById("Links");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+        <footer>
+            <p>&copy; Lefebvre's Portfolio</p>
+        </footer>
+    </script>
+</body>
